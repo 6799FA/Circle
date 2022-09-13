@@ -15,8 +15,6 @@ public class ItemScript : MonoBehaviour {
 
     int i;
 
-    bool active = false;
-
     [SerializeField] ItemInfor[] itemInfors = null;
 
     private void Start() {
@@ -24,7 +22,7 @@ public class ItemScript : MonoBehaviour {
         gameObject.GetComponent<SpriteRenderer>().sprite = itemInfors[i].itemSpr;
     }
 
-    public void ItemActive (PlayerScript ps) {
+    public void ItemActive (PlayerMove ps) {
         
        
     }
