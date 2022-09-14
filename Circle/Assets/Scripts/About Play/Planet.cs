@@ -38,6 +38,8 @@ public class Planet : MonoBehaviour {
 
         _beingTime = Random.Range(0, Mathf.PI);
 
+        transform.eulerAngles = new Vector3(0, 0, Random.Range(-180, 180));
+
         originPos = transform.localPosition;
     }
     

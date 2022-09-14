@@ -860,6 +860,7 @@ MonoBehaviour:
   _planets:
   - {fileID: 5553251812190477864, guid: d31a45fa117664e1792486121ad6ad70, type: 3}
   - {fileID: 5804205207209540039, guid: 096056595dc629c4aa35a7236b140e68, type: 3}
+  - {fileID: 8294744557806944162, guid: 15f29e8e7fc194c24b7d153330e59f5e, type: 3}
   _xCreateRange: 3
   _lastCreatePos: {x: 0, y: 8, z: 0}
   _lastCreateSize: 7.5

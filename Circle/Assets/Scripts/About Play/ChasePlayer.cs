@@ -22,17 +22,15 @@ public class ChasePlayer : MonoBehaviour
     // Update is called once per frame
     void LateUpdate() {
 
-        float yPos = _tr.position.y;
+        float yPos = _tr.position.y + _moveSpeed * Time.deltaTime; ;
 
         if (_trPlayer) {
+
             float playerYPos = _trPlayer.position.y;
 
             if (playerYPos >= _maxPlayerYPos + yPos) {
                 yPos = playerYPos - _maxPlayerYPos;
 
-            }
-            else {
-                yPos += _moveSpeed * Time.deltaTime;
             }
 
         }
