@@ -186,7 +186,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 20
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -210,8 +210,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139122893}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -20, z: -12}
+  m_LocalPosition: {x: 0, y: -40, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1928481979}
   - {fileID: 409543511}
@@ -260,7 +261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4268242658245886, guid: d31a45fa117664e1792486121ad6ad70, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4268242658245886, guid: d31a45fa117664e1792486121ad6ad70, type: 3}
       propertyPath: m_LocalPosition.z
@@ -545,6 +546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -577,6 +579,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -610,6 +613,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -655,7 +659,7 @@ LightingSettings:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Settings.lighting
-  serializedVersion: 3
+  serializedVersion: 4
   m_GIWorkflowMode: 0
   m_EnableBakedLightmaps: 1
   m_EnableRealtimeLightmaps: 1
@@ -668,7 +672,7 @@ LightingSettings:
   m_LightmapMaxSize: 1024
   m_BakeResolution: 40
   m_Padding: 2
-  m_TextureCompression: 1
+  m_LightmapCompression: 3
   m_AO: 0
   m_AOMaxDistance: 1
   m_CompAOExponent: 1
@@ -709,6 +713,7 @@ LightingSettings:
   m_PVRFilteringAtrousPositionSigmaDirect: 0.5
   m_PVRFilteringAtrousPositionSigmaIndirect: 2
   m_PVRFilteringAtrousPositionSigmaAO: 1
+  m_PVRTiledBaking: 0
 --- !u!1001 &1165596799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -787,12 +792,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4734245705460310, guid: 1c8704d7a301943e483a8dbeca6f8ccd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734245705460310, guid: 1c8704d7a301943e483a8dbeca6f8ccd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4734245705460310, guid: 1c8704d7a301943e483a8dbeca6f8ccd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4734245705460310, guid: 1c8704d7a301943e483a8dbeca6f8ccd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10
+      value: -23
       objectReference: {fileID: 0}
     - target: {fileID: 4734245705460310, guid: 1c8704d7a301943e483a8dbeca6f8ccd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -862,8 +875,8 @@ MonoBehaviour:
   - {fileID: 5804205207209540039, guid: 096056595dc629c4aa35a7236b140e68, type: 3}
   - {fileID: 8294744557806944162, guid: 15f29e8e7fc194c24b7d153330e59f5e, type: 3}
   _xCreateRange: 3
-  _lastCreatePos: {x: 0, y: 8, z: 0}
-  _lastCreateSize: 7.5
+  _lastCreatePos: {x: 0, y: 13, z: 0}
+  _lastCreateSize: 12
   preCreate: 5
   makingPlanetNum: 2
 --- !u!4 &1877561350
@@ -876,6 +889,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -888,8 +902,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096363157}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 13.9, y: 0, z: 40}
-  m_LocalScale: {x: 40, y: 20, z: 40}
+  m_LocalPosition: {x: 30, y: 0, z: 40}
+  m_LocalScale: {x: 80, y: 50, z: 40}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 139122898}
   m_RootOrder: 0
@@ -914,7 +929,7 @@ PrefabInstance:
     - target: {fileID: 6114964118356016134, guid: 674d5781a4c5f8c4ba96f8718cdc62c2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -20
+      value: -40
       objectReference: {fileID: 0}
     - target: {fileID: 6114964118356016134, guid: 674d5781a4c5f8c4ba96f8718cdc62c2,
         type: 3}
